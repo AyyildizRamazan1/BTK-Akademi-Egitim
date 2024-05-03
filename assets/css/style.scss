@@ -36,6 +36,41 @@ a {
 .top-bar .icon.icon-mail {
   background-image: url("../img/icon/mail.svg");
 }
+.banner {
+  width: 100%;
+  height: 100vh;
+  background-color: #ddd;
+  &-background-photo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: row;
+    background-image: url(../img/banner/bannerbackground.png);
+    background-size: cover;
+    &-element {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      align-items: start;
+      justify-content: center;
+      flex-direction: column; 
+      position: relative;
+      text-align: start;
+      padding-inline: 160px;
+      &-cover-title{
+        background-color: #0FE3AF;
+        color: #1c1c1c;
+        padding: 2px;
+        padding-inline: 8px;
+        letter-spacing: 1cap;
+      }
+    }
+  }
+}
+
 
 .btn-main-green {
   background-color: #0fe3af;
