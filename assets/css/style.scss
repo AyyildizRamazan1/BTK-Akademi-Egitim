@@ -443,14 +443,77 @@ a {
 }
 
 footer {
-  background-color: #dcedfe;
-  background-image: url(../img/background/Pattern4.png),
-    url(../img/background/Pattern5.png);
+  background-color: #e5f2ef;
+  background-image: url("../img/background/line-1.png"), url("../img/background/line-2.png");
   background-repeat: no-repeat;
   background-position: top left, right bottom;
-  padding: 120px 0;
-}
-.pharma{
-  display: flex;
-  align-items: center;
+  padding: 80px 0;
+  .footer-sitemap {
+      a {
+          display: block;
+          color: #545454;
+          font-weight: 500;
+          margin-bottom: 5px;
+      }
+  }
+  .footer-link-phone,
+  .footer-link-mail {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      color: #545454;
+  }
+  .icon-phone,
+  .icon-mail {
+      display: inline-block;
+      background-color: var(--main-green);
+      background-repeat: no-repeat;
+      background-size: 18px 18px;
+      background-position: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+  }
+  .icon-phone {
+      background-image: url("../img/icon/phone.svg");
+  }
+  .icon-mail {
+      background-image: url("../img/icon/mail.svg");
+  }
+  .input-newsletter {
+      border: none;
+      outline: none;
+      width: 100%;
+      padding: 20px 25px;
+      background-color: #ffffff;
+  }
+  .footer-link-social {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      height: 100%;
+      gap: 30px;
+      a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      }
+      i {
+          display: inline-block;
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center;
+          width: 30px;
+          height: 30px;
+      }
+      .icon-instagram {
+          background-image: url("../img/icon/footer-insta.svg");
+      }
+      .icon-facebook {
+          background-image: url("../img/icon/footer-facebook.svg");
+      }
+      .icon-twitter {
+          background-image: url("../img/icon/footer-twitter.svg");
+      }
+  }
 }
