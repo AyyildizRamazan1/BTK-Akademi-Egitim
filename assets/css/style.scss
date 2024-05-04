@@ -36,9 +36,10 @@ a {
 .top-bar .icon.icon-mail {
   background-image: url("../img/icon/mail.svg");
 }
+
 .banner {
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   background-color: #ddd;
   &-background-photo {
     width: 100%;
@@ -56,12 +57,12 @@ a {
       display: flex;
       align-items: start;
       justify-content: center;
-      flex-direction: column; 
+      flex-direction: column;
       position: relative;
       text-align: start;
       padding-inline: 160px;
-      &-cover-title{
-        background-color: #0FE3AF;
+      &-cover-title {
+        background-color: #0fe3af;
         color: #1c1c1c;
         padding: 2px;
         padding-inline: 8px;
@@ -70,7 +71,6 @@ a {
     }
   }
 }
-
 
 .btn-main-green {
   background-color: #0fe3af;
@@ -83,6 +83,10 @@ a {
   padding: 16px 36px;
   text-decoration: none;
   color: #ffffff;
+  &-outline {
+    border: 1.5px solid #0152a8;
+    padding: 16px 36px;
+  }
 }
 
 .service-card {
@@ -363,4 +367,90 @@ a {
       }
     }
   }
+}
+
+.statistic-card {
+  color: #ffffff;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  &-number {
+    font-size: 3.5rem;
+    max-width: 140px;
+    font-weight: 600;
+  }
+  &-word {
+    max-width: 130px;
+  }
+}
+
+.blog-card {
+  &-img {
+    & img {
+      width: 100%;
+    }
+  }
+  &-info {
+    &-date {
+      display: inline-block;
+      border: 1px solid #cecece;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    &-title {
+      color: #1c1c1c;
+      font-size: 1.5rem;
+      font-weight: 500;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    &-link {
+      text-decoration: underline;
+      color: #0152a8;
+    }
+  }
+}
+.featured-blog-card {
+  display: flex;
+  margin-bottom: 30px;
+  gap: 30px;
+  &-img {
+    width: 220px;
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  &-info {
+    text-align: start;
+    justify-content: center;
+    &-date {
+      display: inline-block;
+      border: 1px solid #cecece;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    &-title {
+      color: #1c1c1c;
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+  }
+}
+
+footer {
+  background-color: #dcedfe;
+  background-image: url(../img/background/Pattern4.png),
+    url(../img/background/Pattern5.png);
+  background-repeat: no-repeat;
+  background-position: top left, right bottom;
+  padding: 120px 0;
+}
+.pharma{
+  display: flex;
+  align-items: center;
 }

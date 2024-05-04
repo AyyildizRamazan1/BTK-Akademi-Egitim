@@ -39,7 +39,7 @@ a {
 
 .banner {
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   background-color: #ddd;
 }
 .banner-background-photo {
@@ -47,7 +47,7 @@ a {
   height: 100%;
   display: flex;
   align-items: center;
-  justify-self: center;
+  justify-content: center;
   position: relative;
   flex-direction: row;
   background-image: url(../img/banner/bannerbackground.png);
@@ -65,7 +65,7 @@ a {
   padding-inline: 160px;
 }
 .banner-background-photo-element-cover-title {
-  background-color: #0FE3AF;
+  background-color: #0fe3af;
   color: #1c1c1c;
   padding: 2px;
   padding-inline: 8px;
@@ -83,6 +83,10 @@ a {
   padding: 16px 36px;
   text-decoration: none;
   color: #ffffff;
+}
+.btn-main-blue-outline {
+  border: 1.5px solid #0152a8;
+  padding: 16px 36px;
 }
 
 .service-card {
@@ -348,4 +352,86 @@ a {
 }
 .team-card-social-media a.icon-twitter {
   background-image: url("../img/icon/twitter.svg");
+}
+
+.statistic-card {
+  color: #ffffff;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+.statistic-card-number {
+  font-size: 3.5rem;
+  max-width: 140px;
+  font-weight: 600;
+}
+.statistic-card-word {
+  max-width: 130px;
+}
+
+.blog-card-img img {
+  width: 100%;
+}
+.blog-card-info-date {
+  display: inline-block;
+  border: 1px solid #cecece;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.blog-card-info-title {
+  color: #1c1c1c;
+  font-size: 1.5rem;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.blog-card-info-link {
+  text-decoration: underline;
+  color: #0152a8;
+}
+
+.featured-blog-card {
+  display: flex;
+  margin-bottom: 30px;
+  gap: 30px;
+}
+.featured-blog-card-img {
+  width: 220px;
+}
+.featured-blog-card-img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.featured-blog-card-info {
+  text-align: start;
+  justify-content: center;
+}
+.featured-blog-card-info-date {
+  display: inline-block;
+  border: 1px solid #cecece;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.featured-blog-card-info-title {
+  color: #1c1c1c;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+footer {
+  background-color: #dcedfe;
+  background-image: url(../img/background/Pattern4.png), url(../img/background/Pattern5.png);
+  background-repeat: no-repeat;
+  background-position: top left, right bottom;
+  padding: 120px 0;
+}
+
+.pharma {
+  display: flex;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */
