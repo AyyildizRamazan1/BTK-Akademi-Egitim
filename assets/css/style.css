@@ -48,7 +48,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
+  position: absolute;
   flex-direction: row;
   background-image: url(../img/banner/bannerbackground.png);
   background-size: cover;
@@ -173,6 +173,7 @@ a {
   background-size: cover;
   background-position: bottom center;
   padding: 110px 0;
+  background-attachment: fixed;
 }
 
 .call-center-card {
@@ -424,8 +425,8 @@ a {
 }
 
 footer {
-  background-color: #e5f2ef;
-  background-image: url("../img/background/line-1.png"), url("../img/background/line-2.png");
+  background-color: #dcedfe;
+  background-image: url("../img/background/Pattern4.png"), url("../img/background/Pattern5.png");
   background-repeat: no-repeat;
   background-position: top left, right bottom;
   padding: 80px 0;
@@ -470,9 +471,18 @@ footer .input-newsletter {
 footer .footer-link-social {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
   height: 100%;
   gap: 30px;
+}
+@media (min-width: 992px) {
+  footer .footer-link-social {
+    justify-content: flex-end;
+  }
+}
+@media (max-width: 768px) {
+  footer .footer-link-social {
+    margin-top: 10px;
+  }
 }
 footer .footer-link-social a {
   display: flex;
